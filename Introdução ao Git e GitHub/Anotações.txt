@@ -1,0 +1,61 @@
+# Sobre o Git:
+- controle de versão
+- armazenamento na nuvem
+- trabalho em equipe 
+- melhorar o seu código
+- reconhecimento
+
+
+## GUI x CLI
+graffic user interface x command line interface
+
+
+## GIT: mudar de pastas, listar as pastas, criar pastas/arquivos, deletar pastas e arquivos
+atenção: terminal Windows x Unix (comandos diferentes)
+
+## Alguns comandos
+dir x is --> ver diretorios
+cd / x cd / --> ir para ver pastas dentro de diratorio
+cd .. x cd .. --> voltar para ver pastas anteriories
+cls x clear --> limpar tela dos terminais
+tab x tab --> autocompletar
+mkdir x sudo su (permissão) + mkdir --> criar uma pasta
+echo "nomedoarquivo" > "nomedoarquivo".txt x echo "nomedoarquivo" > "nomedoarquivo".txt
+del --> deletar arquivo
+rmdir /S /Q "nomedapasta" x rm -rf "nomedapasta" --> deletar pastar inteira
+
+## sha1
+encriptografia que gera uma chave unica de 40 caracteres
+
+### exemplo
+openssl sha1 "nome do arquivo"
+git hash-object
+
+## Tipos de Objetos 
+blob = objeto que guarda metadados
+tree = objeto armazena blobs com mais informações (aponta para blobs e outras trees)
+commit = objeto que armazena todas as informações 
+
+## validação GitHub (para poder clonar códigos no PC)
+- via login Github
+- criar chave SSH ou token
+
+## Comandos 
+git init, git add, git commit, git config, git status, git add*, git commit -m "mensagem", git remote add origin
+
+### Importante github
+o email e nickname do GITHUB igual o do servidor local GIT
+github - criar repositório
+
+## conflitos
+-> merge: alterações na mesma linha podem dar conflito, aí se der o alerta, tem que juntar e ajustar o código segundo recomendação
+
+## Lembrar de:
+- criar pasta e/ou arquivo no meu PC/servidorlocal/reposiório em questão
+- usar o git status para ver o alert de que há uma pasta/arquivo novo lá
+- usar o git add. (ou git add -a) para informar que queremos que seja considerado no controle de versão local
+- usar o git status para ver o alert de que tá pronto
+- usar o git commit -m "comentário da alteração do commit"
+- usar o git status para ver que ele tá esperando para ser mandado na nuvem
+- usar o git push origin main para enviar o commit/alteração para o servidor remoto do github
+- atualizar o repositório do Github para ver se aparece lá
